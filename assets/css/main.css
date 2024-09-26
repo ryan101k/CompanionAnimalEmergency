@@ -3132,29 +3132,22 @@ input, select, textarea {
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 0 2.5em;
 		}
-
-			#header .logo strong {
-				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
-			}
-
-			#header .logo:hover strong {
-				background-color: #9bf1ff;
-			}
-
-			#header .logo:active strong {
-				background-color: #53e3fb;
-			}
+		
+		#header .logo img {
+			max-width: 100px; /* 이미지의 최대 너비를 제한 */
+			height: auto; /* 비율에 맞게 높이를 자동으로 조정 */
+			vertical-align: middle;
+		}
+		
+		#header .logo:hover img {
+			filter: brightness(1.1);
+		}
+		
+		#header .logo:active img {
+			filter: brightness(0.9);
+		}
 
 		#header nav {
 			display: -moz-flex;
