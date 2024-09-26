@@ -2613,6 +2613,53 @@ button:disabled,
     opacity: 0.25;
 }
 
+/* 스크롤 버튼 제일위로 가거나 제일 아래로 가는기능 구현 */
+#scroll-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.scroll-btn {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure buttons are on top */
+}
+
+.scroll-btn:hover {
+    background-color: #e9ecef;
+}
+
+/* 모바일을 위한 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    #scroll-buttons {
+        bottom: 20px;
+        right: 20px;
+        gap: 5px; /* 모바일에서는 버튼 간격을 줄임 */
+    }
+
+    .scroll-btn {
+        padding: 5px; /* 모바일에서는 버튼 크기를 작게 */
+        font-size: 16px; /* 모바일에서는 글자 크기를 작게 */
+        border-radius: 10px; /* 둥근 모서리 정도를 줄임 */
+        background-color: #007bff; /* 모바일에서는 버튼 색상을 바꿈 */
+        color: white; /* 텍스트 색상도 변경 */
+    }
+
+    .scroll-btn:hover {
+        background-color: #0056b3; /* 호버 시 색상 변경 */
+    }
+}
+
 
 /* Tiles */
 
@@ -3745,6 +3792,8 @@ button:disabled,
 			opacity: 1;
 			visibility: visible;
 		}
+
+
 
 /* Info window styling */
 .naver-infowindow {
