@@ -1,29 +1,27 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>펫119 동물 응급 클리닉</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="ko">
+<head>
+    <title>게시판 - Dr.Petper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		<!-- Header -->
-        <header id="header" class="alt">
+        <!-- Header -->
+        <header id="header" class="alt style2">
             <a href="/index/index.html" class="logo">
-              <img src="/images/logo.PNG" alt="Dr.Petper Logo" class="logo-image" />
-              <span>Dr.petper</span>
+                <img src="/images/logo.PNG" alt="Dr.Petper Logo" class="logo-image">
+                <span>Dr.petper</span>
             </a>
             <nav>
-              <a href="#mypage">마이페이지</a>
-              <a href="#menu">메뉴</a>
+                <a href="#menu">Menu</a>
             </nav>
-          </header>
-
+        </header>
 
         <!-- Menu -->
         <nav id="menu">
@@ -34,54 +32,91 @@
                 <li><a href="/index/Information.html">정보제공</a></li>
                 <li><a href="/index/Announcement.html">공지사항</a></li>
                 <li><a href="/index/board.html">게시판</a></li>
-
-            
-                <!-- 관리자 페이지 링크 (로그인 시 표시됨) -->
-                <li id="admin-link" style="display:none;"><a href="/index/admin.html">관리자 페이지</a></li>
             </ul>
             <ul class="actions stacked">
-                <!-- 로그인/로그아웃 버튼 -->
-                <li id="login-link"><a href="/index/login.html" class="button fit">로그인</a></li>
+                <li><a href="/index/login.html" class="button fit">로그인</a></li>
                 <li id="logout-link" style="display:none;"><a href="#" class="button fit">로그아웃</a></li>
                 <li><a href="/index/register.html" class="button primary fit">회원가입</a></li>
             </ul>
         </nav>
 
+        <!-- Main -->
+        <div id="main" class="alt">
+            <section id="banner" class="style2">
+                <div class="inner">
+                    <header class="major">
+                        <h1>커뮤니티 게시판</h1>
+                        <p>펫 관련 정보를 나누고 소통하는 커뮤니티입니다.</p>
+                    </header>
+                </div>
+            </section>
 
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h2>게시글 목록</h2>
+                    </header>
 
-			<!-- Main -->
-			<div id="main">				
-			</div>
+                    <!-- 게시글 목록 -->
+                    <div class="posts">
+                        <table class="table-wrapper">
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>작성일</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="/index/view_post.html?post_id=1">반려동물 건강관리 팁</a></td>
+                                    <td>관리자</td>
+                                    <td>2024-09-26</td>
+                                    <td>102</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="/index/view_post.html?post_id=2">반려동물 응급처치 요령</a></td>
+                                    <td>사용자1</td>
+                                    <td>2024-09-25</td>
+                                    <td>76</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="actions">
+                            <li><a href="/index/create_post.html" class="button primary">글쓰기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-			<!-- Contact -->
-			<section id="contact">				
-			</section>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Dr.Petper</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; 펫119 동물 응급 클리닉</li><li>디자인: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-        <script src="/actionJS/index.js"></script>
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/jquery.scrolly.min.js"></script>
-		<script src="/assets/js/jquery.scrollex.min.js"></script>
-		<script src="/assets/js/browser.min.js"></script>
-		<script src="/assets/js/breakpoints.min.js"></script>
-		<script src="/assets/js/util.js"></script>
-		<script src="/assets/js/main.js"></script>
-	</body>
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
 </html>
