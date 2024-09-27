@@ -62,9 +62,9 @@
 			}
 		}
 		.logo-image {
-		max-width: 10px; /* 이미지의 최대 너비를 100px로 제한 */
+		max-width: 20px; /* 이미지의 최대 너비를 100px로 제한 */
 		max-height: 50px; /* 이미지의 최대 높이를 50px로 제한 */
-		width: 10px; /* 이미지의 비율을 유지하면서 너비 자동 조정 */
+		width: 50px; /* 이미지의 비율을 유지하면서 너비 자동 조정 */
 		height: auto; /* 이미지의 비율을 유지하면서 높이 자동 조정 */
 		vertical-align: middle;
 		padding-right: 0.325em;

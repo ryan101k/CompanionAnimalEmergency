@@ -2625,18 +2625,19 @@ button:disabled,
 }
 
 .scroll-btn {
-    background-color: #f8f9fa;
+    background-color: #2e3548; /* 어두운 배경에 맞춘 버튼 색상 */
     border: none;
     border-radius: 50%;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f5f5f5; /* 텍스트는 밝은 색 */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* 약간의 밝은 그림자 */
     z-index: 1001; /* Ensure buttons are on top */
 }
 
 .scroll-btn:hover {
-    background-color: #e9ecef;
+    background-color: #3b445e; /* 호버 시 약간 밝은 색상 */
 }
 
 /* 모바일을 위한 반응형 디자인 */
@@ -2651,14 +2652,15 @@ button:disabled,
         padding: 5px; /* 모바일에서는 버튼 크기를 작게 */
         font-size: 16px; /* 모바일에서는 글자 크기를 작게 */
         border-radius: 10px; /* 둥근 모서리 정도를 줄임 */
-        background-color: #007bff; /* 모바일에서는 버튼 색상을 바꿈 */
-        color: white; /* 텍스트 색상도 변경 */
+        background-color: #3b445e; /* 모바일에서는 살짝 밝은 색상 */
+        color: white; /* 텍스트는 밝은 색 유지 */
     }
 
     .scroll-btn:hover {
-        background-color: #0056b3; /* 호버 시 색상 변경 */
+        background-color: #505d7b; /* 모바일에서 호버 시 더 밝게 */
     }
 }
+
 
 
 /* Tiles */
