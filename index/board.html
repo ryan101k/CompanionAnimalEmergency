@@ -31,7 +31,7 @@
                 <li><a href="/index/Adoption.html">입양대상동물</a></li>
                 <li><a href="/index/Information.html">정보제공</a></li>
                 <li><a href="/index/Announcement.html">공지사항</a></li>
-                <li><a href="/index/board.html">게시판</a></li>
+                <li><a href="/index/board.html">문의사항</a></li>
             </ul>
             <ul class="actions stacked">
                 <li><a href="/index/login.html" class="button fit">로그인</a></li>
@@ -45,8 +45,8 @@
             <section id="banner" class="style2">
                 <div class="inner">
                     <header class="major">
-                        <h1>커뮤니티 게시판</h1>
-                        <p>펫 관련 정보를 나누고 소통하는 커뮤니티입니다.</p>
+                        <h1>문의사항 페이지</h1>
+                        <p>궁금한 점을 올려주세요.</p>
                     </header>
                 </div>
             </section>
@@ -54,7 +54,39 @@
             <section id="one">
                 <div class="inner">
                     <header class="major">
-                        <h2>문의사항</h2>
+                        <form action="">
+                            <h2>문의사항</h2>
+                            <table>
+                                <tr>
+                                    <td>이름</td>
+                                    <td><input type="text" name="name"></td>
+                                    <br>
+                                </tr>
+                                
+                                <tr>
+                                    <td>비밀번호</td>
+                                    <td><input type="password" name="password"></td>
+                                    <br>
+                                </tr>
+
+                                <tr>
+                                    <td>제목</td>
+                                    <td><input type="text" name="title"></td>
+                                    <br>
+                                </tr>
+
+                                <tr>
+                                    <td>내용</td>
+                                    <td><textarea name="content" id="content" cols="30" rows="10"></textarea></td>
+                                    <br>
+                                </tr>
+                            </table>
+                                <input type="submit" value="저장">
+                                <input type="reset" value="초기화">
+                        </form>
+                            
+                        
+
                     </header>
 
                     <!-- 문의사항 목록 -->
