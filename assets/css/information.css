@@ -1,12 +1,19 @@
 #head{
     text-align: center;
 }
-#main#search{
-    display: flex;
-}
+
 #category{
     font-size: 20px;
     width: 150px;
+    height: 70px;
+}
+#search{
+    display: flex;
+    padding-left: 25%;
+    
+}
+#searching{
+    width: 780px;
     height: 70px;
    
 }
