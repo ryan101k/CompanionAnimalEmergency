@@ -1,267 +1,267 @@
 @import url(fontawesome-all.min.css); /* 폰트 어썸 관련 CSS 파일 가져오기 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic"); /* 구글 폰트 가져오기 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0; /* 기본 마진 제거 */
-	padding: 0; /* 기본 패딩 제거 */
-	border: 0; /* 기본 테두리 제거 */
-	font-size: 100%; /* 폰트 크기를 기본값으로 설정 */
-	font: inherit; /* 폰트 속성 상속 */
-	vertical-align: baseline; /* 수직 정렬 기준 설정 */
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block; /* HTML5 요소들을 블록 요소로 표시 */
-}
-
-body {
-	line-height: 1; /* 줄 간격 설정 */
-}
-
-ol, ul {
-	list-style: none; /* 목록 스타일 제거 */
-}
-
-blockquote, q {
-	quotes: none; /* 인용부호 제거 */
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: ''; /* 인용부호 내용 제거 */
-		content: none; /* 인용부호 내용 제거 */
+	html, body, div, span, applet, object,
+	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+	pre, a, abbr, acronym, address, big, cite,
+	code, del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var, b,
+	u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+	form, label, legend, table, caption, tbody,
+	tfoot, thead, tr, th, td, article, aside,
+	canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby,
+	section, summary, time, mark, audio, video {
+		margin: 0; /* 기본 마진 제거 */
+		padding: 0; /* 기본 패딩 제거 */
+		border: 0; /* 기본 테두리 제거 */
+		font-size: 100%; /* 폰트 크기를 기본값으로 설정 */
+		font: inherit; /* 폰트 속성 상속 */
+		vertical-align: baseline; /* 수직 정렬 기준 설정 */
 	}
 
-table {
-	border-collapse: collapse; /* 테이블 테두리 간격 제거 */
-	border-spacing: 0; /* 테이블 셀 간격 제거 */
-}
-
-body {
-	-webkit-text-size-adjust: none; /* 텍스트 크기 조정 비활성화 (웹킷 브라우저) */
-}
-
-mark {
-	background-color: transparent; /* 배경색 제거 */
-	color: inherit; /* 부모 요소의 색상 상속 */
-}
-
-input::-moz-focus-inner {
-	border: 0; /* 입력 요소의 내부 테두리 제거 (모질라 브라우저) */
-	padding: 0; /* 내부 패딩 제거 */
-}
-
-input, select, textarea {
-	-moz-appearance: none; /* 브라우저 기본 스타일 제거 (모질라 브라우저) */
-	-webkit-appearance: none; /* 브라우저 기본 스타일 제거 (웹킷 브라우저) */
-	-ms-appearance: none; /* 브라우저 기본 스타일 제거 (IE 브라우저) */
-	appearance: none; /* 브라우저 기본 스타일 제거 */
-}
-
-/* 기본 설정 끝 */
-
-/* 미디어 쿼리 - 화면 너비가 480px 이하일 때 */
-@media screen and (max-width: 480px) {
-	html, body {
-		min-width: 320px; /* 최소 너비 설정 */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block; /* HTML5 요소들을 블록 요소로 표시 */
 	}
-}
 
-html {
-	box-sizing: border-box; /* 전체 요소에 박스 사이징 설정 */
-}
+	body {
+		line-height: 1; /* 줄 간격 설정 */
+	}
 
-*, *:before, *:after {
-	box-sizing: inherit; /* 모든 요소에 상속된 박스 사이징 사용 */
-}
+	ol, ul {
+		list-style: none; /* 목록 스타일 제거 */
+	}
 
-body {
-	background: #242943; /* 배경색 설정 */
-}
+	blockquote, q {
+		quotes: none; /* 인용부호 제거 */
+	}
 
-body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-	/* 로딩 전 애니메이션 및 트랜지션 제거 */
-	-moz-animation: none !important;
-	-webkit-animation: none !important;
-	-ms-animation: none !important;
-	animation: none !important;
-	-moz-transition: none !important;
-	-webkit-transition: none !important;
-	-ms-transition: none !important;
-	transition: none !important;
-}
+		blockquote:before, blockquote:after, q:before, q:after {
+			content: ''; /* 인용부호 내용 제거 */
+			content: none; /* 인용부호 내용 제거 */
+		}
 
-/* 텍스트 스타일 설정 */
-body, input, select, textarea {
-	color: #ffffff; /* 텍스트 색상 설정 */
-	font-family: "Source Sans Pro", Helvetica, sans-serif; /* 폰트 설정 */
-	font-size: 17pt; /* 폰트 크기 설정 */
-	font-weight: 300; /* 폰트 굵기 설정 */
-	letter-spacing: 0.025em; /* 글자 간격 설정 */
-	line-height: 1.65; /* 줄 간격 설정 */
-}
+	table {
+		border-collapse: collapse; /* 테이블 테두리 간격 제거 */
+		border-spacing: 0; /* 테이블 셀 간격 제거 */
+	}
 
-/* 미디어 쿼리 - 화면 크기에 따른 폰트 크기 조정 */
-@media screen and (max-width: 1680px) {
+	body {
+		-webkit-text-size-adjust: none; /* 텍스트 크기 조정 비활성화 (웹킷 브라우저) */
+	}
+
+	mark {
+		background-color: transparent; /* 배경색 제거 */
+		color: inherit; /* 부모 요소의 색상 상속 */
+	}
+
+	input::-moz-focus-inner {
+		border: 0; /* 입력 요소의 내부 테두리 제거 (모질라 브라우저) */
+		padding: 0; /* 내부 패딩 제거 */
+	}
+
+	input, select, textarea {
+		-moz-appearance: none; /* 브라우저 기본 스타일 제거 (모질라 브라우저) */
+		-webkit-appearance: none; /* 브라우저 기본 스타일 제거 (웹킷 브라우저) */
+		-ms-appearance: none; /* 브라우저 기본 스타일 제거 (IE 브라우저) */
+		appearance: none; /* 브라우저 기본 스타일 제거 */
+	}
+
+	/* 기본 설정 끝 */
+
+	/* 미디어 쿼리 - 화면 너비가 480px 이하일 때 */
+	@media screen and (max-width: 480px) {
+		html, body {
+			min-width: 320px; /* 최소 너비 설정 */
+		}
+	}
+
+	html {
+		box-sizing: border-box; /* 전체 요소에 박스 사이징 설정 */
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit; /* 모든 요소에 상속된 박스 사이징 사용 */
+	}
+
+	body {
+		background: #242943; /* 배경색 설정 */
+	}
+
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		/* 로딩 전 애니메이션 및 트랜지션 제거 */
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	/* 텍스트 스타일 설정 */
 	body, input, select, textarea {
-		font-size: 14pt;
-	}
-}
-
-@media screen and (max-width: 1280px) {
-	body, input, select, textarea {
-		font-size: 12pt;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	body, input, select, textarea {
-		font-size: 11pt;
-	}
-}
-
-a {
-	/* 링크에 대한 트랜지션 효과 설정 */
-	-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	color: inherit; /* 부모 요소의 색상 상속 */
-	text-decoration: none; /* 밑줄 제거 */
-	border-bottom: none; /* 밑줄처럼 보일 수 있는 border-bottom 제거 */
-}
-	a:hover {
-		border-bottom-color: transparent; /* 호버 시 밑줄 색상 제거 */
-		color: #9bf1ff !important; /* 호버 시 텍스트 색상 변경 */
-	}
-	a:active {
-		color: #53e3fb !important; /* 클릭 시 텍스트 색상 변경 */
+		color: #ffffff; /* 텍스트 색상 설정 */
+		font-family: "Source Sans Pro", Helvetica, sans-serif; /* 폰트 설정 */
+		font-size: 17pt; /* 폰트 크기 설정 */
+		font-weight: 300; /* 폰트 굵기 설정 */
+		letter-spacing: 0.025em; /* 글자 간격 설정 */
+		line-height: 1.65; /* 줄 간격 설정 */
 	}
 
-/* 굵게 표시된 텍스트 스타일 */
-strong, b {
-	color: #ffffff; /* 텍스트 색상 설정 */
-	font-weight: 600; /* 폰트 굵기 설정 */
-}
+	/* 미디어 쿼리 - 화면 크기에 따른 폰트 크기 조정 */
+	@media screen and (max-width: 1680px) {
+		body, input, select, textarea {
+			font-size: 14pt;
+		}
+	}
 
-/* 기울임꼴 텍스트 스타일 */
-em, i {
-	font-style: italic; /* 기울임꼴 설정 */
-}
+	@media screen and (max-width: 1280px) {
+		body, input, select, textarea {
+			font-size: 12pt;
+		}
+	}
 
-/* 문단 스타일 */
-p {
-	margin: 0 0 2em 0; /* 문단 하단 여백 설정 */
-}
+	@media screen and (max-width: 360px) {
+		body, input, select, textarea {
+			font-size: 11pt;
+		}
+	}
 
-/* 제목 태그 스타일 */
-h1, h2, h3, h4, h5, h6 {
-	color: #ffffff; /* 제목 텍스트 색상 설정 */
-	font-weight: 600; /* 제목 폰트 굵기 설정 */
-	line-height: 1.65; /* 줄 간격 설정 */
-	margin: 0 0 1em 0; /* 제목 하단 여백 설정 */
-}
+	a {
+		/* 링크에 대한 트랜지션 효과 설정 */
+		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		color: inherit; /* 부모 요소의 색상 상속 */
+		text-decoration: none; /* 밑줄 제거 */
+		border-bottom: none; /* 밑줄처럼 보일 수 있는 border-bottom 제거 */
+	}
+		a:hover {
+			border-bottom-color: transparent; /* 호버 시 밑줄 색상 제거 */
+			color: #9bf1ff !important; /* 호버 시 텍스트 색상 변경 */
+		}
+		a:active {
+			color: #53e3fb !important; /* 클릭 시 텍스트 색상 변경 */
+		}
 
-/* 링크가 포함된 제목 태그 스타일 */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit; /* 부모 요소의 색상 상속 */
-	border-bottom: 0; /* 링크 밑줄 제거 */
-}
+	/* 굵게 표시된 텍스트 스타일 */
+	strong, b {
+		color: #ffffff; /* 텍스트 색상 설정 */
+		font-weight: 600; /* 폰트 굵기 설정 */
+	}
 
-/* 각 제목 크기 설정 */
-h1 {
-	font-size: 2.5em;
-}
+	/* 기울임꼴 텍스트 스타일 */
+	em, i {
+		font-style: italic; /* 기울임꼴 설정 */
+	}
 
-h2 {
-	font-size: 1.75em;
-}
+	/* 문단 스타일 */
+	p {
+		margin: 0 0 2em 0; /* 문단 하단 여백 설정 */
+	}
 
-h3 {
-	font-size: 1.35em;
-}
+	/* 제목 태그 스타일 */
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffffff; /* 제목 텍스트 색상 설정 */
+		font-weight: 600; /* 제목 폰트 굵기 설정 */
+		line-height: 1.65; /* 줄 간격 설정 */
+		margin: 0 0 1em 0; /* 제목 하단 여백 설정 */
+	}
 
-h4 {
-	font-size: 1.1em;
-}
+	/* 링크가 포함된 제목 태그 스타일 */
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit; /* 부모 요소의 색상 상속 */
+		border-bottom: 0; /* 링크 밑줄 제거 */
+	}
 
-h5 {
-	font-size: 0.9em;
-}
-
-h6 {
-	font-size: 0.7em;
-}
-
-/* 미디어 쿼리 - 화면 크기에 따른 제목 크기 조정 */
-@media screen and (max-width: 736px) {
+	/* 각 제목 크기 설정 */
 	h1 {
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.35em;
 	}
-}
 
-/* 하위/상위 텍스트 스타일 */
-sub {
-	font-size: 0.8em;
-	position: relative;
-	top: 0.5em;
-}
+	h4 {
+		font-size: 1.1em;
+	}
 
-sup {
-	font-size: 0.8em;
-	position: relative;
-	top: -0.5em;
-}
+	h5 {
+		font-size: 0.9em;
+	}
 
-/* 인용 블록 스타일 */
-blockquote {
-	border-left: solid 4px rgba(212, 212, 255, 0.1); /* 왼쪽에 경계선 추가 */
-	font-style: italic; /* 기울임꼴 설정 */
-	margin: 0 0 2em 0; /* 하단 여백 설정 */
-	padding: 0.5em 0 0.5em 2em; /* 내부 패딩 설정 */
-}
+	h6 {
+		font-size: 0.7em;
+	}
 
-/* 코드 블록 스타일 */
-code {
-	background: rgba(212, 212, 255, 0.035); /* 배경색 설정 */
-	font-family: "Courier New", monospace; /* 폰트 설정 */
-	font-size: 0.9em; /* 폰트 크기 설정 */
-	margin: 0 0.25em; /* 여백 설정 */
-	padding: 0.25em 0.65em; /* 패딩 설정 */
-}
+	/* 미디어 쿼리 - 화면 크기에 따른 제목 크기 조정 */
+	@media screen and (max-width: 736px) {
+		h1 {
+			font-size: 2em;
+		}
 
-/* 사전 포맷 텍스트 스타일 */
-pre {
-	-webkit-overflow-scrolling: touch; /* 터치 스크롤 활성화 */
-	font-family: "Courier New", monospace; /* 폰트 설정 */
-	font-size: 0.9em; /* 폰트 크기 설정 */
-	margin: 0 0 2em 0; /* 하단 여백 설정 */
-}
+		h2 {
+			font-size: 1.5em;
+		}
 
-pre code {
-	display: block; /* 블록 요소로 표시 */
-	line-height: 1.75; /* 줄 간격 설정 */
-	padding: 1em 1.5em; /* 패딩 설정 */
-	overflow-x: auto; /* 가로 스크롤 활성화 */
-}
+		h3 {
+			font-size: 1.25em;
+		}
+	}
+
+	/* 하위/상위 텍스트 스타일 */
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	/* 인용 블록 스타일 */
+	blockquote {
+		border-left: solid 4px rgba(212, 212, 255, 0.1); /* 왼쪽에 경계선 추가 */
+		font-style: italic; /* 기울임꼴 설정 */
+		margin: 0 0 2em 0; /* 하단 여백 설정 */
+		padding: 0.5em 0 0.5em 2em; /* 내부 패딩 설정 */
+	}
+
+	/* 코드 블록 스타일 */
+	code {
+		background: rgba(212, 212, 255, 0.035); /* 배경색 설정 */
+		font-family: "Courier New", monospace; /* 폰트 설정 */
+		font-size: 0.9em; /* 폰트 크기 설정 */
+		margin: 0 0.25em; /* 여백 설정 */
+		padding: 0.25em 0.65em; /* 패딩 설정 */
+	}
+
+	/* 사전 포맷 텍스트 스타일 */
+	pre {
+		-webkit-overflow-scrolling: touch; /* 터치 스크롤 활성화 */
+		font-family: "Courier New", monospace; /* 폰트 설정 */
+		font-size: 0.9em; /* 폰트 크기 설정 */
+		margin: 0 0 2em 0; /* 하단 여백 설정 */
+	}
+
+	pre code {
+		display: block; /* 블록 요소로 표시 */
+		line-height: 1.75; /* 줄 간격 설정 */
+		padding: 1em 1.5em; /* 패딩 설정 */
+		overflow-x: auto; /* 가로 스크롤 활성화 */
+	}
 
 		/* 수평선 스타일 */
 		hr {
